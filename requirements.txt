@@ -1,0 +1,23 @@
+# Requerimientos base para AI Voice Agent
+sounddevice
+
+numpy
+
+# 🔊 Reconocimiento de voz offline (Google Web Speech API)
+SpeechRecognition==3.10.0
+pyaudio==0.2.13
+
+# 🔈 Text-to-Speech (puedes cambiarlo si usas otra librería)
+pyttsx3==2.90
+
+# 🌐 Conexiones WebSocket
+websockets==11.0.3
+
+# 🔐 Variables de entorno desde .env
+python-dotenv==1.0.1
+
+# 🌍 Comunicación HTTP con AssemblyAI
+requests==2.31.0
+
+# ⚙️ Opcional: para compatibilidad de dependencias en Windows
+pipwin==0.5.1

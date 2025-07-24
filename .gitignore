@@ -1,0 +1,10 @@
+# Evitar subir archivos sensibles o inútiles
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+.vscode/
+.idea/
+benchmark_logs/
