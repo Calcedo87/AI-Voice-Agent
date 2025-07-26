@@ -1,9 +1,7 @@
 # Requerimientos base para AI Voice Agent
-sounddevice
+#sounddevice
 
-numpy
-
-# 🔊 Reconocimiento de voz offline (Google Web Speech API)
+# 🔊 Reconocimiento de voz offline (Google Web Speech API) y online
 SpeechRecognition==3.10.0
 pyaudio==0.2.13
 
@@ -12,6 +10,7 @@ pyttsx3==2.90
 
 # 🌐 Conexiones WebSocket
 websockets==11.0.3
+websocket-client==1.7.0
 
 # 🔐 Variables de entorno desde .env
 python-dotenv==1.0.1
@@ -21,3 +20,5 @@ requests==2.31.0
 
 # ⚙️ Opcional: para compatibilidad de dependencias en Windows
 pipwin==0.5.1
+
+
