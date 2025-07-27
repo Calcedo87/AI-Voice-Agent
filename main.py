@@ -19,9 +19,11 @@ LOGS_DIR.mkdir(exist_ok=True)
 log_file_path = LOGS_DIR / \
     f"session_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
 
+# Cambio menor para forzar actualización
+
 # ==== CONFIGURACIÓN GENERAL ====
 
-YOUR_API_KEY = os.getenv("ASSEMBLYAI_API_KEY", "YOUR-API-KEY")
+MY_API_KEY = os.getenv("ASSEMBLYAI_API_KEY", "MY-API-KEY")
 
 CONNECTION_PARAMS = {
     "sample_rate": 16000,
@@ -281,7 +283,7 @@ def run():
 
     ws_app = websocket.WebSocketApp(
         API_ENDPOINT,
-        header={"Authorization": YOUR_API_KEY},
+        header={"Authorization": MY_API_KEY},
         on_open=on_open,
         on_message=on_message,
         on_error=on_error,
